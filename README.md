@@ -6,12 +6,12 @@
         - Storybook
         - Webpack
     - Front-End
-        - Ant Designer
+        - Ant Design
         - React Hooks
             - useContext `so components deep on the tree can easily access the state`
             - useState
             - useLayoutEffect `sample implementation so things like animejs can work its magic`
-            - immutable via `immutable-helper `
+            - immutability via `immutable-helper `
 
 
 ## Getting Started
@@ -46,7 +46,7 @@ _must be run after git commits_
 |`npm run pub:major`| update package major version x.0.0 |
 
 ### Publish to Package registry
-_will run `build` before pubslish && will publish to `git repository` after_
+_will run `build` before publishing & will publish to `git repository` after_
 
 |Command| Description|
 |--|--|
