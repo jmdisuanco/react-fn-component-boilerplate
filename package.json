@@ -1,0 +1,68 @@
+{
+  "name": "react-fn-component-boilerplate",
+  "version": "0.1.0",
+  "description": "React functional (ƒ) Component BoilerPlate with storybook",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "pub:patch": "npm version patch",
+    "pub:minor": "npm version minor",
+    "pub:major": "npm version major",
+    "prepublish": "npm run build",
+    "postpublish": "git push --follow-tags",
+    "start": "start-storybook -p 9999",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "function",
+    "class-less",
+    "component",
+    "boilerplate",
+    "jmart",
+    "react"
+  ],
+  "author": "John Martin R. Disuanco",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmdisuanco/react-fn-component-boilerplate"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-console": "^1.1.0",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addon-notes": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-plugin-import": "^1.12.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "file-loader": "^4.0.0",
+    "node-sass": "^4.9.3",
+    "react": ">= 16.8",
+    "react-dom": ">= 16.8",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  },
+  "peerDependencies": {
+    "react": ">= 16.8",
+    "react-dom": ">= 16.8"
+  },
+  "dependencies": {
+    "@atlaskit/css-reset": "^4.0.1",
+    "animejs": "^3.0.1",
+    "antd": "^3.19.3",
+    "immutability-helper": "^3.0.0"
+  }
+}
