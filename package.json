@@ -11,7 +11,8 @@
     "prepublish": "npm run build",
     "postpublish": "git push --follow-tags",
     "start": "start-storybook -p 9999",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "keywords": [
     "function",
@@ -38,6 +39,7 @@
     "@storybook/addon-notes": "^5.1.9",
     "@storybook/addons": "^5.1.9",
     "@storybook/react": "^5.1.9",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-add-module-exports": "^1.0.2",
     "babel-plugin-import": "^1.12.0",

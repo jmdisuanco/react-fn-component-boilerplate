@@ -1,5 +1,5 @@
 # JM's ƒunctional React component Boilerplate
- This is a Functional React component Boilerplate which makes use of React Hooks
+ A Functional React component Boilerplate which makes use of React Hooks
  
 ## Features
     - Development preconfigured
@@ -32,28 +32,30 @@
 #### Basic Commands
 |Command| Description|
 |--|--|
-|`npm start`| Start Storybook on port `9999`|
-|`npm run build`| Build the package outputs to .`/dist/index.js`|
-|`npm run build-storybook`|Build Storybook|
+|`npm start`| Start Storybook on port `9999` |
+|`npm run build`| Build the package outputs to .`/dist/index.js` |
+|`npm run build-storybook`| Build Storybook |
 
 #### Version Management Commands
 _must be run after git commits_
+
 |Command| Description|
 |--|--|
-|`npm run pub:patch`|update package patch version 0.0.x |
-|`npm run pub:minor`|update package minor version 0.0.x |
-|`npm run pub:major`|update package major version 0.0.x |
+|`npm run pub:patch`| update package patch version 0.0.x |
+|`npm run pub:minor`| update package minor version 0.x.0 |
+|`npm run pub:major`| update package major version x.0.0 |
 
 ### Publish to Package registry
 _will run `build` before pubslish && will publish to `git repository` after_
+
 |Command| Description|
 |--|--|
-|`npm run publish`|update package patch version 0.0.x |
+|`npm run publish`|publish to NPM registry|
 
 ### Contributions are most welcome
 Please Fork and Send Pull Request for the improvement of this boilerplate.
 
 ### License 
-This project is licensed under the MIT License - see the (LICENSE)[LICENSE] file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 
