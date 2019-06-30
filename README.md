@@ -1,5 +1,5 @@
 # JM's ƒunctional React component Boilerplate
- A Functional React component Boilerplate which makes use of React Hooks
+ A Functional React component Boilerplate which makes use of React Hooks [DEMO](https://jmdisuanco.github.io/react-fn-component-boilerplate)
  
 ## Features
     - Development preconfigured
