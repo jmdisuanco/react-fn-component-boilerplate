@@ -1,17 +1,19 @@
-import React from 'react'
-import BoilerPlate from '../src'
-const {App, Components} = BoilerPlate
-const {DisplayAnimation, SliderPad } = Components
+import React, { Suspense } from "react";
+import BoilerPlate from "../src";
+const { App, Components } = BoilerPlate;
+const { DisplayAnimation, SliderPad } = Components;
 
-const LayoutEffectDemo = ()=>{
-    const uState= 0
-    return(
-        <App  uState={uState}>
-        <div style={{height:100}}></div>
-            <DisplayAnimation/>
-            <SliderPad/>
-        </App>
-    )
-}
+const LayoutEffectDemo = () => {
+  const uState = 0;
+  return (
+    <App uState={uState}>
+      <Suspense fallback={<div></div>}>
+        <div style={{ height: 100 }} />
+        <DisplayAnimation />
+        <SliderPad />
+      </Suspense>
+    </App>
+  );
+};
 
-export default LayoutEffectDemo
+export default LayoutEffectDemo;
