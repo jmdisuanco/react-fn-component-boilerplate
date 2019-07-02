@@ -6,7 +6,9 @@ const path = require("path");
 module.exports = {
   // This is where our app starts. This is why we have done all this importing
   // and exporting, to get to here
-  entry: "./src/index.js",
+  entry: {
+    entry: "./src/index.js"
+  },
   // module (I know it's a bit weird to have module.exports.module) is where we
   // define all the rules for how webpack will deal with thing.
   module: {
@@ -23,7 +25,18 @@ module.exports = {
         // This is where we tell webpack to use babel to transpile our JS.
         // The configuration can go here, but in this case it's in ./babelrc.js
         use: {
-          loader: "babel-loader"
+          loader: "babel-loader",
+          options: {
+            //presets: ["@babel/preset-env", "@babel/preset-react"],
+            plugins: [
+              "syntax-dynamic-import",
+              "transform-class-properties",
+              [
+                "import",
+                { libraryName: "antd", libraryDirectory: "es", style: "css" }
+              ]
+            ]
+          }
           // options: {
           //   presets: ["@babel/preset-env"]
           // }
@@ -86,11 +99,18 @@ module.exports = {
     // You can do fun things here like use the [hash] keyword to generate unique
     // filenames, but for this purpose rinse.js is fine. This file and path will
     // be what you put in package.json's "main" field
-    filename: "index.js",
+    filename: "[name].js",
+    chunkFilename: "[chunkhash].bundle.js",
+
     // This field determines how things are importable when installed from other
     // sources. UMD may not be correct now and there is an open issue to fix this,
     // but until then, more reading can be found here:
     // https://webpack.js.org/configuration/output/#output-librarytarget
     libraryTarget: "umd"
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "initial"
+    }
   }
 };

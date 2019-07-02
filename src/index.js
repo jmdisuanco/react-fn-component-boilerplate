@@ -1,6 +1,5 @@
-import App from './app'
-import Components from './components'
-const BoilerPlate = {App, Components}
-    
+import App from "./app";
+import Components from "./components";
+const BoilerPlate = { App, Components };
 
-export default BoilerPlate
+export default BoilerPlate;

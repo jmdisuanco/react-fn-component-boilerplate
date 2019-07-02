@@ -2,9 +2,9 @@
   "name": "react-fn-component-boilerplate",
   "version": "0.1.0",
   "description": "React functional (ƒ) Component BoilerPlate with storybook",
-  "main": "./dist/index.js",
+  "main": "./dist/entry.js",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "rm -rf ./dist &&webpack --mode production",
     "pub:patch": "npm version patch",
     "pub:minor": "npm version minor",
     "pub:major": "npm version major",
@@ -55,6 +55,7 @@
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.3",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.2.0"
   },
   "peerDependencies": {
