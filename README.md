@@ -14,13 +14,25 @@
             - immutability via `immutable-helper `
 
 
-## Getting Started
+## Getting Started via GIT
 - Clone this repository
     - `git clone https://github.com/jmdisuanco/react-fn-component-boilerplate`
 - Change directory
     - `cd jm-fn-react-component-boilerplate`
 - Remove git reference
     -`rm -rf .git`
+- Install Package Dependencies
+    - `npm i` or `yarn`
+- Start storybook
+    - `npm start`
+- Access the story on `http://localhost:9999`
+
+
+## Getting Started using degit
+- download the repository to your project directory 
+    - `npx degit https://github.com/jmdisuanco/react-fn-component-boilerplate my-project`
+- Change directory
+    - `cd my-project`
 - Install Package Dependencies
     - `npm i` or `yarn`
 - Start storybook
