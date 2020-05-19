@@ -10,7 +10,6 @@
         - React Hooks
             - useContext `so components deep on the tree can easily access the state`
             - useState
-            - useLayoutEffect `sample implementation so things like animejs can work its magic`
             - immutability via `immutable-helper `
 
 

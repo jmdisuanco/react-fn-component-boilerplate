@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 import Basic from "../demo/basic";
 import BasicTwo from "../demo/basic2";
 import BasicTogether from "../demo/basic3";
-import LayoutEffectDemo from '../demo/uselayouteffect';
+import AnimeDemo from '../demo/animeDemo';
 
 storiesOf("Basic Examples", module)
     .add("Basic Example", () => <Basic />)
@@ -12,4 +12,4 @@ storiesOf("Basic Examples", module)
     .add("All the Basics together", () => <BasicTogether />);
 
 storiesOf('Basics+', module)
-    .add("Using useLayoutEffect to make animejs work", ()=> <LayoutEffectDemo/>)
+    .add("AnimeJS Demo", ()=> <AnimeDemo/>)

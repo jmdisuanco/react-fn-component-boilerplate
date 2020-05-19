@@ -3,7 +3,7 @@ import BoilerPlate from "../src";
 const { App, Components } = BoilerPlate;
 const { DisplayAnimation, SliderPad } = Components;
 
-const LayoutEffectDemo = () => {
+const AnimeDemo = () => {
   const uState = 0;
   return (
     <App uState={uState}>
@@ -16,4 +16,4 @@ const LayoutEffectDemo = () => {
   );
 };
 
-export default LayoutEffectDemo;
+export default AnimeDemo;
